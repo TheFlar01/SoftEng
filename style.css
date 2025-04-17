@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+  }
+
+  #map {
+    width: 100%;  /* Map takes 80% of the screen width */
+    height: 100%;
+  }
+
+  .image-container {
+    position: absolute;
+    top: 10px;  /* Adjust top positioning */
+    left: 50px; /* Adjust left positioning */
+    display: flex; /* Align images inline */
+    gap: 10px; /* Space between the images */
+    z-index: 1000; /* Ensure images are above the map tiles */
+  }
+  .overlay-image {
+    width: 50px; /* Image size */
+    height: 50px; /* Image size */
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    background-color: yellow;
+  }
